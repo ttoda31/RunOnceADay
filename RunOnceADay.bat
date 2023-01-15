@@ -28,10 +28,22 @@
 )
 
 @REM --------------------------------------------------------
-@REM This batch file has not yet been run today, so run it.
+@REM This batch file has not yet been run today,
+@REM so run the target executables.
 @REM --------------------------------------------------------
 
-@REM TODO
+@REM Run .exe files.
+@for %%f in (targets\*.exe) do @(
+  @start %%f
+)
+@REM Run .bat files.
+@for %%f in (targets\*.bat) do @(
+  @start %%f
+)
+@REM Run .py files.
+@for %%f in (targets\*.py) do @(
+  @Python %%f
+)
 
 @REM Create today's log file
 @type nul > %todays_log_file%
