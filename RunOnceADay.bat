@@ -13,7 +13,7 @@
 @set today=%date:/=%
 
 @REM Generate today's log file name.
-@set log_prefix=LogStartupOneceADay_
+@set log_prefix=LogRunOnceADay_
 @set todays_log_file=%log_prefix%%today%
 
 @REM Search log files.
@@ -45,5 +45,5 @@
   @Python %%f
 )
 
-@REM Create today's log file
+@REM Create today's log file.
 @type nul > %todays_log_file%
