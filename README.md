@@ -11,10 +11,11 @@ If `RunOnceADay.bat` has already been run that day, it will exit without doing a
 
 ## Usage
 
-* Place the executables you want to run in the `targets` folder.
-
-* Double-click `RunOnceADay.bat`.
-* Register `RunOnceADay.bat` as startup and run it only at the first startup of the day.
+1. Place the executables you want to run in the `targets` folder.
+2. And run them with;
+   * Double-click `RunOnceADay.bat`.
+   * Register `RunOnceADay.bat` as startup and run it only at the first startup of the day.
+   * etc.
 
 ## Supported executables
 
